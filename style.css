@@ -503,7 +503,6 @@ footer {
         left: 5%;
         right: 5%;
         bottom: 20px;
-
         flex-direction: column;
         align-items: stretch;
         gap: 5px;
@@ -518,7 +517,6 @@ footer {
     }
     .stats {
         grid-template-columns: repeat(2, 1fr);
-
         gap: 20px;
     }
     .destination-grid {
@@ -526,7 +524,6 @@ footer {
     }
     .features {
         grid-template-columns: 1fr;
-
         gap: 30px;
     }
     .offers {
