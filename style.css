@@ -21,7 +21,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 0 7%;
 }
 .logo {
@@ -35,11 +34,17 @@ nav {
 nav a {
     font-size: 12px;
 }
+nav a:hover {
+    color: #9a751b;
+}
 .header-right {
     display: flex;
     align-items: center;
     gap: 18px;
     font-size: 12px;
+}
+.header-right a:hover {
+    color: #9a751b;
 }
 .search-icon {
     font-size: 20px;
@@ -52,19 +57,25 @@ nav a {
     padding: 9px 18px;
     font-weight: bold;
 }
+.sign-btn:hover {
+    background: #d3a728;
+}
 .menu-btn {
     display: none;
     background: none;
     border: none;
     font-size: 25px;
 }
+.mobile-menu {
+    display: none;
+}
 .hero {
     height: 410px;
     position: relative;
     background:
         linear-gradient(
-            rgba(20, 65, 55, .3),
-            rgba(20, 65, 55, .55)
+            rgba(20, 65, 55, 0.3),
+            rgba(20, 65, 55, 0.55)
         ),
         url("https://images.unsplash.com/photo-1530789253388-582c481c54b0");
     background-size: cover;
@@ -94,7 +105,7 @@ nav a {
     align-items: center;
     padding: 14px;
     border-radius: 7px;
-    box-shadow: 0 4px 15px rgba(0,0,0,.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 .search-item {
     flex: 1;
@@ -109,7 +120,7 @@ nav a {
 .search-item b {
     display: block;
     font-size: 11px;
-
+}
 .search-item small {
     display: block;
     color: #777;
@@ -124,7 +135,10 @@ nav a {
     border-radius: 5px;
     font-weight: bold;
     color: #183b32;
-
+}
+.search-btn:hover {
+    background: #d3a728;
+}
 .stats {
     background: white;
     padding: 55px 7% 30px;
@@ -168,6 +182,9 @@ nav a {
     font-size: 11px;
     color: #9a751b;
 }
+.heading > a:hover {
+    text-decoration: underline;
+}
 .destination-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -178,6 +195,10 @@ nav a {
     border: 1px solid #ddd;
     border-radius: 6px;
     overflow: hidden;
+    transition: transform 0.2s ease;
+}
+.destination-card:hover {
+    transform: translateY(-4px);
 }
 .destination-card img {
     width: 100%;
@@ -219,14 +240,12 @@ nav a {
     text-align: center;
     background: #f7f4eb;
 }
-
 .features {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin-top: 30px;
 }
-
 .icon {
     width: 40px;
     height: 40px;
@@ -238,12 +257,10 @@ nav a {
     background: #e3e6d9;
     font-size: 20px;
 }
-
 .feature h3 {
     font-family: Georgia, serif;
     font-size: 14px;
 }
-
 .feature p {
     max-width: 180px;
     margin: 7px auto;
@@ -256,27 +273,24 @@ nav a {
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
 }
-
 .offer {
     height: 170px;
     position: relative;
     border-radius: 7px;
     overflow: hidden;
 }
-
 .offer img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 .offer::after {
     content: "";
     position: absolute;
     inset: 0;
     background: linear-gradient(
         transparent,
-        rgba(0,0,0,.7)
+        rgba(0, 0, 0, 0.7)
     );
 }
 .offer-text {
@@ -301,6 +315,9 @@ nav a {
     padding: 6px 12px;
     border-radius: 3px;
     font-size: 10px;
+}
+.offer-text button:hover {
+    background: #d3a728;
 }
 .testimonials {
     text-align: center;
@@ -366,12 +383,15 @@ nav a {
     border-radius: 0 4px 4px 0;
     font-weight: bold;
 }
+.newsletter button:hover {
+    background: #d3a728;
+}
 footer {
     background: #f7f4eb;
     padding: 40px 7%;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
-   gap: 30px;
+    gap: 30px;
 }
 .footer-about h2 {
     font-family: Georgia, serif;
@@ -405,6 +425,9 @@ footer {
     color: #777;
     font-size: 10px;
 }
+.footer-column a:hover {
+    color: #183b32;
+}
 .copyright {
     background: #f7f4eb;
     border-top: 1px solid #ddd;
@@ -412,9 +435,6 @@ footer {
     padding: 15px;
     font-size: 9px;
     color: #777;
-}
-.mobile-menu {
-    display: none;
 }
 @media (max-width: 768px) {
     header {
@@ -439,8 +459,8 @@ footer {
         flex-direction: column;
         gap: 25px;
         z-index: 100;
-        box-shadow: -5px 0 15px rgba(0,0,0,.2);
-        transition: right .3s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+        transition: right 0.3s ease;
     }
     .mobile-menu.active {
         right: 0;
@@ -466,6 +486,8 @@ footer {
         border: none;
         border-radius: 5px;
         background: #e4b832;
+        color: #183b32;
+        font-weight: bold;
     }
     .hero {
         height: 530px;
@@ -481,6 +503,7 @@ footer {
         left: 5%;
         right: 5%;
         bottom: 20px;
+
         flex-direction: column;
         align-items: stretch;
         gap: 5px;
@@ -495,6 +518,7 @@ footer {
     }
     .stats {
         grid-template-columns: repeat(2, 1fr);
+
         gap: 20px;
     }
     .destination-grid {
@@ -502,6 +526,7 @@ footer {
     }
     .features {
         grid-template-columns: 1fr;
+
         gap: 30px;
     }
     .offers {
