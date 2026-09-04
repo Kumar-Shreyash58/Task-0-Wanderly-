@@ -24,10 +24,10 @@
     </header>
     <div class="mobile-menu" id="mobileMenu">
         <button class="close-btn" onclick="closeMenu()">✕</button>
-        <a href="#home">Discover</a>
-        <a href="#destinations">Destinations</a>
-        <a href="#stays">Stays</a>
-        <a href="#experiences">Experiences</a>
+        <a href="#home" onclick="closeMenu()">Discover</a>
+        <a href="#destinations" onclick="closeMenu()">Destinations</a>
+        <a href="#stays" onclick="closeMenu()">Stays</a>
+        <a href="#experiences" onclick="closeMenu()">Experiences</a>
         <input type="text" placeholder="Search">
         <button class="mobile-sign">Sign In</button>
     </div>
@@ -37,6 +37,7 @@
             <p>
                 Curated journeys for the sophisticated explorer
             </p>
+
         </div>
         <div class="search-box">
             <div class="search-item">
@@ -67,7 +68,9 @@
                     <small>Add guests</small>
                 </div>
             </div>
-            <button class="search-btn">Search</button>
+            <button class="search-btn">
+                Search
+            </button>
         </div>
     </section>
     <section class="stats">
@@ -92,7 +95,9 @@
         <div class="heading">
             <div>
                 <h2>Popular Destinations</h2>
-                <p>Curated favorites for the unforgettable explorer</p>
+                <p>
+                    Curated favorites for the unforgettable explorer
+                </p>
             </div>
             <a href="#">View all →</a>
         </div>
@@ -100,7 +105,7 @@
             <div class="destination-card">
                 <img
                     src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
-                    alt="Bali">
+                    alt="Amalfi Coast">
                 <div class="card-content">
                     <div class="card-title">
                         <h3>Amalfi Coast</h3>
@@ -116,7 +121,7 @@
             <div class="destination-card">
                 <img
                     src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff"
-                    alt="Santorini">
+                    alt="Kyoto">
                 <div class="card-content">
                     <div class="card-title">
                         <h3>Kyoto</h3>
@@ -132,7 +137,7 @@
             <div class="destination-card">
                 <img
                     src="https://images.unsplash.com/photo-1540541338287-41700207dee6"
-                    alt="Bali">
+                    alt="Swiss Alps">
                 <div class="card-content">
                     <div class="card-title">
                         <h3>Swiss Alps</h3>
@@ -148,7 +153,7 @@
             <div class="destination-card">
                 <img
                     src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7"
-                    alt="Mountains">
+                    alt="Santorini">
                 <div class="card-content">
                     <div class="card-title">
                         <h3>Santorini</h3>
@@ -195,61 +200,68 @@
             </div>
         </div>
     </section>
-    <section class="why section">
+    <section class="why section" id="experiences">
         <h2>Why Wanderly?</h2>
         <div class="features">
             <div class="feature">
                 <div class="icon">♡</div>
                 <h3>Curated Experiences</h3>
                 <p>
-                    Handpicked experiences made
-                    specially for you.
+                    Handpicked experiences made specially for you.
                 </p>
             </div>
             <div class="feature">
                 <div class="icon">♧</div>
                 <h3>Local Expertise</h3>
                 <p>
-                    Discover places with
-                    recommendations from locals.
+                    Discover places with recommendations from locals.
                 </p>
             </div>
             <div class="feature">
                 <div class="icon">▣</div>
                 <h3>Flexible Booking</h3>
                 <p>
-                    Simple and flexible booking
-                    for your next adventure.
+                    Simple and flexible booking for your next adventure.
                 </p>
             </div>
         </div>
     </section>
-    <section class="section">
+    <section class="section" id="stays">
         <div class="heading">
             <div>
                 <h2>Featured Escapes</h2>
-                <p>Find your next unforgettable adventure</p>
+                <p>
+                    Find your next unforgettable adventure
+                </p>
             </div>
         </div>
         <div class="offers">
             <div class="offer">
                 <img
                     src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
-                    alt="Summer escape">
+                    alt="Summer Escape">
                 <div class="offer-text">
                     <h3>Summer Escape</h3>
-                    <p>Discover beautiful beaches</p>
-                    <button>Explore →</button>
+                    <p>
+                        Discover beautiful beaches
+                    </p>
+                    <button>
+                        Explore →
+                    </button>
                 </div>
             </div>
             <div class="offer">
                 <img
                     src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
-                    alt="Mountain retreat">
+                    alt="Winter Retreat">
                 <div class="offer-text">
                     <h3>Winter Retreat</h3>
-                    <p>Escape to peaceful mountains</p>
-                    <button>Explore →</button>
+                    <p>
+                        Escape to peaceful mountains
+                    </p>
+                    <button>
+                        Explore →
+                    </button>
                 </div>
             </div>
         </div>
@@ -258,33 +270,48 @@
         <h2>What Travelers Say</h2>
         <div class="testimonial-grid">
             <div class="testimonial">
-                <div class="stars">★★★★★</div>
+                <div class="stars">
+                    ★★★★★
+                </div>
                 <p>
                     "Wanderly made our trip so easy.
                     Everything was beautifully planned."
                 </p>
-                <strong>— Ananya, India</strong>
+                <strong>
+                    — Ananya, India
+                </strong>
             </div>
             <div class="testimonial">
-                <div class="stars">★★★★★</div>
+                <div class="stars">
+                    ★★★★★
+                </div>
                 <p>
                     "Amazing destinations and excellent
                     recommendations. Loved the experience."
                 </p>
-                <strong>— Rohan, India</strong>
+                <strong>
+                    — Rohan, India
+                </strong>
             </div>
             <div class="testimonial">
-                <div class="stars">★★★★★</div>
+                <div class="stars">
+                    ★★★★★
+                </div>
                 <p>
                     "A simple and beautiful way to
                     discover new places."
                 </p>
-                <strong>— Priya, India</strong>
+                <strong>
+                    — Priya, India
+                </strong>
             </div>
         </div>
+
     </section>
     <section class="newsletter">
-        <h2>Never miss an adventure</h2>
+        <h2>
+            Never miss an adventure
+        </h2>
         <p>
             Sign up for travel inspiration and exclusive offers.
         </p>
@@ -315,9 +342,9 @@
         </div>
         <div class="footer-column">
             <h3>Explore</h3>
-            <a href="#">Destinations</a>
-            <a href="#">Stays</a>
-            <a href="#">Experiences</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#stays">Stays</a>
+            <a href="#experiences">Experiences</a>
             <a href="#">Travel Guides</a>
         </div>
         <div class="footer-column">
