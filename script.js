@@ -1,4 +1,4 @@
-// ================= MOBILE MENU =================
+
 
 function openMenu() {
     document.getElementById("mobileMenu").classList.add("active");
@@ -7,9 +7,6 @@ function openMenu() {
 function closeMenu() {
     document.getElementById("mobileMenu").classList.remove("active");
 }
-
-
-// ================= NEWSLETTER =================
 
 document
     .getElementById("newsletterForm")
