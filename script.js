@@ -1,24 +1,19 @@
-
-
 function openMenu() {
-    document.getElementById("mobileMenu").classList.add("active");
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.add("active");
 }
-
 function closeMenu() {
-    document.getElementById("mobileMenu").classList.remove("active");
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.remove("active");
 }
-
-document
-    .getElementById("newsletterForm")
-    .addEventListener("submit", function(event) {
-
-        event.preventDefault();
-
-        const email = document.getElementById("email").value;
-
-        if (email.includes("@")) {
-            alert("Thank you for subscribing!");
-        } else {
-            alert("Please enter a valid email.");
-        }
-    });
+const newsletterForm = document.getElementById("newsletterForm");
+newsletterForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+    const email = document.getElementById("email").value;
+    if (email.trim() === "") {
+        alert("Please enter your email.");
+        return;
+    }
+    alert("Thank you for subscribing!");
+    newsletterForm.reset();
+});
